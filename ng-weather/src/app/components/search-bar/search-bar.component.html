@@ -1,1 +1,5 @@
-<p>search-bar works!</p>
+<mat-form-field>
+  <mat-label>Search by zip code</mat-label>
+  <input matInput #zipCode type="number" placeholder="Ex. 10001" />
+</mat-form-field>
+<button (click)="getWeatherDatatByZipCode(zipCode.value)">click me</button>
